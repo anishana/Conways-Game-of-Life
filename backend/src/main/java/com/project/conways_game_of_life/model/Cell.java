@@ -5,7 +5,6 @@ import lombok.Data;
 @Data
 public class Cell {
     private State state;
-
     public Cell() {
         this.state = State.DEAD;
     }
