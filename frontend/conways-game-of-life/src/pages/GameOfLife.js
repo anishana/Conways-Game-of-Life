@@ -129,7 +129,7 @@ const GameOfLife = () => {
     return (
         <>
 
-            <Button variant="contained" sx={{"m":2}} onClick={() => {
+            <Button variant="contained" sx={{ "m": 2 }} onClick={() => {
 
                 setRunning(!running);
                 if (!running) {
@@ -140,21 +140,21 @@ const GameOfLife = () => {
                 {running ? 'Stop' : 'Start'}
             </Button>
             <Button
-                variant="contained" sx={{"m":2}} onClick={() => {
+                variant="contained" sx={{ "m": 2 }} onClick={() => {
                     stepUpdate();
                 }}>
                 One step Advance
             </Button>
 
 
-            <Button variant="contained" sx={{"m":2}} onClick={() => { clear(); }}>
+            <Button variant="contained" sx={{ "m": 2 }} onClick={() => { clear(); }}>
                 Clear
             </Button>
             <div
                 style={{
                     display: 'grid',
                     gridTemplateColumns: `repeat(${columnSize}, 20px)`,
-                    margin: '10%'
+                    margin: '1%'
                 }}
             >
                 {
